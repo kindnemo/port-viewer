@@ -1,3 +1,88 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body {
-  background-color: magenta;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.viewport__screen, .viewport__main, .main, .head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.head {
+  background-color: #CA3546;
+  padding: 25px;
+}
+.head__logo {
+  font-size: 50px;
+}
+
+.viewport {
+  align-items: center;
+  background-color: #35CAB9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px black;
+}
+.viewport__main {
+  gap: 15px;
+  margin: 20px 0;
+}
+.viewport__main h2 {
+  font-size: 50px;
+}
+.viewport__main .cross {
+  font-size: 7rem;
 }/*# sourceMappingURL=main.css.map */
